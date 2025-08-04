@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "collector"
+version = "0.1.0"
+description = "Modbus polling service"
+authors = ["CARDI SAS"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pymodbus = "^3.5.2"
+asyncpg = "^0.29.0"
+redis = "^5.0.4"
+
+[tool.poetry.scripts]
+collector = "main:main"

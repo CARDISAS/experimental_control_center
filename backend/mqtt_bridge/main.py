@@ -1,0 +1,1 @@
+# Optional bridge Redis -> MQTT
