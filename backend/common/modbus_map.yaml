@@ -1,9 +1,10 @@
 coils:
-  0: valve_1
-  1: valve_2
-  2: valve_3
-  3: valve_4
+  # 0-47  →  8 placas (A0-A7) * 6 relés
+  {% for i in range(48) %}
+  {{ i }}: valve_{{ ("%02d" % i) }}
+  {% endfor %}
 holding_registers:
   0: lux_raw
   1: ph_raw
   2: ec_raw
+  3: flow_count
